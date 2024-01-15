@@ -3,13 +3,12 @@ import random
 import time
 from loguru import logger
 from sys import stderr
-from web3.exceptions import TimeExhausted
 
 # Определение диапазона суммы перевода и времени задержки
 min_transfer = 69  # минимальная сумма перевода в МЕМЕ
 max_transfer = 75  # максимальная сумма перевода в МЕМЕ
-min_delay = 25  # минимальное время задержки в секундах
-max_delay = 35  # максимальное время задержки в секундах
+min_delay = 25  # минимальное время задержки в секундах между кошельками
+max_delay = 35  # максимальное время 
 GWEI_CONTROL = 20
 
 logger.remove()
